@@ -1,0 +1,33 @@
+# UQ: ['Dropout', 'Ensemble', 'Bayesian', 'SWAG', 'AER', 'PRE']
+UQ: ['Bayesian', 'SWAG', 'AER', 'PRE']
+Dist : 'in' #in or out
+Case: 'MHD'
+Field: 'rho, u, v, p, Bx, By'
+Model: 'FNO'
+Epochs: 500
+Batch Size: 5
+Optimizer: 'Adam'
+Learning Rate: 0.005
+Scheduler Step: 100
+Scheduler Gamma: 0.5
+Activation: 'GeLU'
+Physics Normalisation: 'No'
+Normalisation Strategy: 'Min-Max'
+T_in: 1    
+T_out: 20
+Step: 1
+Width_time: 16 
+Width_vars: 0  
+Modes: 8
+Variables: 6 
+Loss Function: 'LP'
+Seed: 0 
+Runs: 
+  Deterministic: 'free-puck'
+  Dropout: 'gritty-salamander'
+  # Ensemble: ['obtuse-fossil', 'adagio-watch', 'concrete-style', 'future-grenade', 'green-depth'] #250
+  Ensemble: ['molten-acid', 'lazy-estuary', 'slow-strait', 'adaptive-request', 'worn-batch']#
+  Bayesian: 'gravitational-resistivity'
+  SWAG: 'edible-index'
+  AER: 'free-puck'
+  PRE: 'free-puck'
