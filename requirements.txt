@@ -1,0 +1,11 @@
+# PACRC / CP-PRE stack — tested with Python 3.11.x
+# Install:  python3.11 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt
+# GPU PyTorch: use wheels from https://pytorch.org/get-started/locally/ instead of the CPU line below if needed.
+
+torch>=2.1.0,<3.0.0
+numpy>=1.24.0,<3.0.0
+scipy>=1.10.0
+matplotlib>=3.7.0
+tqdm>=4.65.0
+PyYAML>=6.0
+pyDOE>=0.3.8
